@@ -1,16 +1,9 @@
 import type { NextPage } from "next";
-import { Container, Image } from "@nextui-org/react";
+import { Container, Image, useTheme } from "@nextui-org/react";
 
 const Home: NextPage = () => {
   return (
-    <Container
-      css={{
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+    <Container>
       <Image
         width={320}
         height={180}
