@@ -1,16 +1,15 @@
 import type { NextPage } from "next";
 import { Container, Image, useTheme } from "@nextui-org/react";
+import HeroSection from "../components/HeroSection";
+import ClientSection from "../components/ClientSection";
+import FeatureSection from "../components/FeatureSection";
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Image
-        width={320}
-        height={180}
-        src="https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true"
-        alt="Default Image"
-        objectFit="cover"
-      />
+      <HeroSection />
+      <ClientSection />
+      <FeatureSection />
     </Container>
   );
 };
