@@ -1,48 +1,7 @@
 import { Container, Grid, Image, Text, Spacer } from "@nextui-org/react";
+import { features } from "@utils/features";
 
 const FeatureSection = () => {
-  const features = {
-    firstFeatures: {
-      img: "	https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png",
-      contentOrder: 1,
-      imageOrder: 0,
-      header: "Nice Features",
-      text: "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.",
-      options: [
-        "Unlimited domain names.",
-        "150+ components.",
-        "Lifetime updates.",
-        "24/7 technical support.",
-      ],
-    },
-    secondFeatures: {
-      img: "	https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png",
-      contentOrder: 0,
-      imageOrder: 1,
-      header: "Nice Features",
-      text: "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.",
-      options: [
-        "Unlimited domain names.",
-        "150+ components.",
-        "Lifetime updates.",
-        "24/7 technical support.",
-      ],
-    },
-    thirdFeatures: {
-      img: "	https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png",
-      contentOrder: 1,
-      imageOrder: 0,
-      header: "Nice Features",
-      text: "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.",
-      options: [
-        "Unlimited domain names.",
-        "150+ components.",
-        "Lifetime updates.",
-        "24/7 technical support.",
-      ],
-    },
-  };
-
   return (
     <Container display="flex" direction="column" css={{ gap: "5rem" }}>
       {Object.values(features).map((feature, index) => (

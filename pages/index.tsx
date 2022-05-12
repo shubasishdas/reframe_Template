@@ -6,7 +6,7 @@ import FeatureSection from "../components/FeatureSection";
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container css={{ maxWidth: "60vw", margin: "0px auto" }}>
       <HeroSection />
       <ClientSection />
       <FeatureSection />
