@@ -21,7 +21,7 @@ const WallOfLove = () => {
             </Text>
           </Grid>
           <Grid>
-            <Text size={23} css={{ ta: "center", fontWeight: "$light" }}>
+            <Text size="$sm" css={{ ta: "center", fontWeight: "$light" }}>
               Lorem ipsum dolor sit amet.
             </Text>
           </Grid>

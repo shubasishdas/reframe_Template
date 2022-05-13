@@ -10,7 +10,7 @@ export default function Comments({ comment }: Comment) {
       <Grid.Container justify="center">
         <Avatar size="xl" src={comment.img} zoomed />
       </Grid.Container>
-      <Text size={23} css={{ ta: "center", fontWeight: "$light" }}>
+      <Text size="$sm" css={{ ta: "center", fontWeight: "$light" }}>
         {comment.text}
       </Text>
       <Spacer y={0.5} />
