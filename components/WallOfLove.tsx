@@ -1,4 +1,4 @@
-import { Container, Text, Grid, Spacer } from "@nextui-org/react";
+import { Container, Text, Grid, Spacer, Col } from "@nextui-org/react";
 import { comments } from "@utils/comments";
 import Comments from "./Comments";
 
@@ -31,7 +31,9 @@ const WallOfLove = () => {
 
         <Grid.Container justify="center" gap={4} wrap="wrap">
           {comments.map((comment, index) => (
-            <Comments key={index} comment={comment} />
+            <Col css={{ w: "$96" }}>
+              <Comments key={index} comment={comment} />
+            </Col>
           ))}
         </Grid.Container>
       </Grid.Container>

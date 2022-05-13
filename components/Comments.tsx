@@ -6,7 +6,7 @@ interface Comment {
 
 export default function Comments({ comment }: Comment) {
   return (
-    <Grid xs={12} sm={6} md={4} direction="column">
+    <Grid direction="column">
       <Grid.Container justify="center">
         <Avatar size="xl" src={comment.img} zoomed />
       </Grid.Container>
