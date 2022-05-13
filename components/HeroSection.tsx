@@ -9,7 +9,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <Container>
+    <Container css={{ m: "0px auto", p: 0, width: "60vw" }}>
       <Spacer y={3} />
       <Grid.Container justify="space-between">
         <Grid>
