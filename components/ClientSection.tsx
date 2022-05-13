@@ -2,7 +2,7 @@ import { Container, Grid, Spacer, Image } from "@nextui-org/react";
 
 const ClientSection = () => {
   return (
-    <Container>
+    <Container css={{ m: "0px auto", p: 0, width: "60vw" }}>
       <Spacer y={4} />
       <Grid.Container css={{ justifyContent: "space-around" }}>
         <Grid>

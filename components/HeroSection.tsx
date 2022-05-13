@@ -3,14 +3,13 @@ import {
   Container,
   Text,
   Grid,
-  Avatar,
   Spacer,
   Image,
 } from "@nextui-org/react";
 
 const HeroSection = () => {
   return (
-    <Container>
+    <Container css={{ m: "0px auto", p: 0, width: "60vw" }}>
       <Spacer y={3} />
       <Grid.Container justify="space-between">
         <Grid>
@@ -43,10 +42,7 @@ const HeroSection = () => {
         <Text color="#aeaeae">Firefox and Safari soon.</Text>
         <Spacer y={2} />
       </Grid.Container>
-      <Image
-        src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png"
-        alt="Default Image"
-      />
+      <Image src="/assets/ipad.png" alt="Default Image" />
     </Container>
   );
 };

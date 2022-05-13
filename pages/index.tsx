@@ -5,13 +5,15 @@ import ClientSection from "../components/ClientSection";
 import FeatureSection from "../components/FeatureSection";
 import Footer from "../components/Footer";
 import ImproveSection from "../components/ImproveSection";
+import WallOfLove from "../components/WallOfLove";
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container css={{ mw: "100vw", p: 0 }}>
       <HeroSection />
       <ClientSection />
       <FeatureSection />
+      <WallOfLove />
       <ImproveSection />
       <Footer />
     </Container>

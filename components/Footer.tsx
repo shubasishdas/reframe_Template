@@ -7,14 +7,14 @@ export default function App() {
         display="flex"
         wrap="nowrap"
         justify="space-around"
-        css={{ gap: 200 }}
+        css={{ gap: 200, m: "0px auto", p: 0, width: "60vw" }}
       >
         <Grid.Container>
           <Text color="#aeaeae" size={10}>
             © 0000 Uisual
           </Text>
         </Grid.Container>
-        <Grid.Container justify="space-between">
+        <Grid.Container justify="center" css={{ gap: "$10" }}>
           <Text color="#aeaeae" size={10}>
             Features
           </Text>
@@ -25,7 +25,7 @@ export default function App() {
             Terms
           </Text>
         </Grid.Container>
-        <Grid.Container justify="space-around">
+        <Grid.Container justify="flex-end" css={{ gap: "$10" }}>
           <Grid>
             <Image src="/assets/twitter.png" alt="twitter" />
           </Grid>
@@ -37,7 +37,7 @@ export default function App() {
           </Grid>
         </Grid.Container>
       </Container>
-      <Spacer y={3} />
+      <Spacer y={2} />
     </>
   );
 }
