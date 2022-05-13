@@ -2,15 +2,14 @@ import { Container, Grid, Spacer, Image } from "@nextui-org/react";
 
 const ClientSection = () => {
   return (
-    <Container css={{ m: "0px auto", p: 0, width: "60vw" }}>
+    <Container css={{ m: "0 auto", p: 0, w: "60vw" }}>
       <Spacer y={4} />
-      <Grid.Container css={{ justifyContent: "space-around" }}>
+      <Grid.Container justify="space-around">
         <Grid>
           <Image
             src={"/assets/facebook.svg"}
             alt="facebook"
-            width={150}
-            height={50}
+            css={{ w: "$40", h: "$16" }}
             objectFit="fill"
           />
         </Grid>
@@ -18,8 +17,7 @@ const ClientSection = () => {
           <Image
             src={"/assets/pinterest.svg"}
             alt="pinterest"
-            width={150}
-            height={50}
+            css={{ w: "$40", h: "$16" }}
             objectFit="fill"
           />
         </Grid>
@@ -27,8 +25,7 @@ const ClientSection = () => {
           <Image
             src={"/assets/stripe.svg"}
             alt="stripe"
-            width={150}
-            height={50}
+            css={{ w: "$40", h: "$16" }}
             objectFit="fill"
           />
         </Grid>
@@ -36,8 +33,7 @@ const ClientSection = () => {
           <Image
             src={"/assets/dribbble.svg"}
             alt="dribbble"
-            width={150}
-            height={50}
+            css={{ w: "$40", h: "$16" }}
             objectFit="fill"
           />
         </Grid>
@@ -45,8 +41,7 @@ const ClientSection = () => {
           <Image
             src={"/assets/behance.svg"}
             alt="behance"
-            width={150}
-            height={50}
+            css={{ w: "$40", h: "$16" }}
             objectFit="fill"
           />
         </Grid>

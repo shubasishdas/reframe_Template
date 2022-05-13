@@ -6,14 +6,12 @@ const FeatureSection = () => {
     <Container
       display="flex"
       direction="column"
-      css={{ m: "0px auto", p: 0, width: "60vw", gap: "5rem" }}
+      css={{ m: "0px auto", p: 0, w: "60vw", gap: "$28" }}
     >
       {Object.values(features).map((feature, index) => (
-        <Grid.Container key={index} wrap="nowrap" css={{ gap: "4rem" }}>
+        <Grid.Container key={index} wrap="nowrap" css={{ gap: "$18" }}>
           <Grid
             css={{
-              width: "56rem",
-              height: "24rem",
               order: feature.imageOrder,
               flexBasis: "50%",
             }}
@@ -23,7 +21,7 @@ const FeatureSection = () => {
 
           <Grid.Container
             css={{
-              padding: "4rem 0",
+              p: "$16 0",
               order: feature.contentOrder,
               flexBasis: "50%",
             }}
@@ -31,24 +29,22 @@ const FeatureSection = () => {
             <Text h2 b>
               {feature.header}
             </Text>
-            <Text size={20}>{feature.text}</Text>
-            <Spacer y={1} />
-            <Grid.Container wrap="wrap" css={{ height: "4rem" }}>
+            <Text css={{ fontSize: "$md" }}>{feature.text}</Text>
+            <Grid.Container wrap="wrap">
               {feature.options.map((option, index) => (
                 <Grid.Container
                   key={index}
                   wrap="nowrap"
-                  css={{ flexBasis: "50%", gap: "10px" }}
+                  alignItems="center"
+                  css={{ flexBasis: "50%", gap: "$4" }}
                 >
                   <Grid>
                     <Image
-                      width={20}
-                      height={20}
                       src={"/assets/check.svg"}
                       alt="checkbox"
                       objectFit="cover"
-                    />{" "}
-                    {/* <Spacer y={2} /> */}
+                      css={{ size: "$9" }}
+                    />
                   </Grid>
                   <Text>{option}</Text>
                 </Grid.Container>
