@@ -31,8 +31,8 @@ const WallOfLove = () => {
 
         <Grid.Container justify="center" gap={4} wrap="wrap">
           {comments.map((comment, index) => (
-            <Col css={{ w: "$96" }}>
-              <Comments key={index} comment={comment} />
+            <Col key={index} css={{ w: "$96" }}>
+              <Comments comment={comment} />
             </Col>
           ))}
         </Grid.Container>
