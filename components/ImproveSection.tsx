@@ -17,10 +17,10 @@ const ImproveSection = () => {
         alignItems="center"
         css={{ paddingLeft: "14rem", paddingRight: "14rem" }}
       >
-        <Text h1 b>
+        <Text h2 b>
           Improve your work.
         </Text>
-        <Text size={25} css={{ textAlign: "center" }}>
+        <Text size={20} css={{ textAlign: "center" }}>
           Lorem ipsum dolor sit amet consectetur.
         </Text>
         <Spacer y={1} />
