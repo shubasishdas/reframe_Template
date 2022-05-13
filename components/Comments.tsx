@@ -1,4 +1,4 @@
-import { Container, Grid, Avatar, Text, Spacer } from "@nextui-org/react";
+import { Grid, Avatar, Text, Spacer } from "@nextui-org/react";
 
 interface Comment {
   comment: { img: string; text: string; name: string; position: string };
