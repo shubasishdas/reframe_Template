@@ -9,7 +9,7 @@ import WallOfLove from "../components/WallOfLove";
 
 const Home: NextPage = () => {
   return (
-    <Container css={{ mw: "100vw", p: 0 }}>
+    <Container css={{ mw: "$100", p: 0 }}>
       <HeroSection />
       <ClientSection />
       <FeatureSection />
