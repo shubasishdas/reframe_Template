@@ -3,7 +3,11 @@ import { features } from "@utils/features";
 
 const FeatureSection = () => {
   return (
-    <Container display="flex" direction="column" css={{ gap: "5rem" }}>
+    <Container
+      display="flex"
+      direction="column"
+      css={{ m: "0px auto", p: 0, width: "60vw", gap: "5rem" }}
+    >
       {Object.values(features).map((feature, index) => (
         <Grid.Container key={index} wrap="nowrap" css={{ gap: "4rem" }}>
           <Grid
@@ -52,7 +56,7 @@ const FeatureSection = () => {
           </Grid.Container>
         </Grid.Container>
       ))}
-      <Spacer y={2} />
+      {/* <Spacer y={2} /> */}
     </Container>
   );
 };
