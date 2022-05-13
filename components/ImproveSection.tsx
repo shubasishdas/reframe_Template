@@ -11,20 +11,7 @@ import {
 const ImproveSection = () => {
   return (
     <Container>
-      <Spacer y={3} />
-      <Grid.Container justify="space-between">
-        <Grid>
-          <Image
-            width={18}
-            height={18}
-            src={"/assets/companyLogo.png"}
-            alt="companyLogo"
-            objectFit="fill"
-          />
-        </Grid>
-        <Button size="sm">Add to Chrome</Button>
-      </Grid.Container>
-      <Spacer y={5} />
+      <Spacer y={1} />
       <Grid.Container
         direction="column"
         alignItems="center"
