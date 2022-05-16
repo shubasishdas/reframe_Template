@@ -6,7 +6,7 @@ const FeatureSection = () => {
     <Container
       display="flex"
       direction="column"
-      css={{ m: "0px auto", p: 0, w: "60vw", gap: "$28" }}
+      css={{ m: "0 auto", p: 0, w: "60vw", gap: "$28" }}
     >
       {Object.values(features).map((feature, index) => (
         <Grid.Container key={index} wrap="nowrap" css={{ gap: "$18" }}>
@@ -29,7 +29,7 @@ const FeatureSection = () => {
             <Text h2 b>
               {feature.header}
             </Text>
-            <Text css={{ fontSize: "$md" }}>{feature.text}</Text>
+            <Text css={{ fs: "$md" }}>{feature.text}</Text>
             <Grid.Container wrap="wrap">
               {feature.options.map((option, index) => (
                 <Grid.Container

@@ -8,15 +8,13 @@ const WallOfLove = () => {
       justify="space-between"
       css={{
         bg: "$gray50",
-        mw: "$100",
         mt: "$24",
-        px: "$24",
       }}
     >
-      <Grid.Container css={{ w: "$100" }}>
+      <Grid.Container css={{ w: "60vw", margin: "0 auto" }}>
         <Grid.Container justify="center" direction="column">
           <Grid>
-            <Text h2 b css={{ ta: "center", mt: "$15" }}>
+            <Text h2 b css={{ ta: "center", mt: "$24" }}>
               Wall of Love
             </Text>
           </Grid>
@@ -37,6 +35,7 @@ const WallOfLove = () => {
           ))}
         </Grid.Container>
       </Grid.Container>
+      <Spacer y={3} />
     </Container>
   );
 };
