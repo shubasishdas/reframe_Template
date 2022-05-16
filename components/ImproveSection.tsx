@@ -11,8 +11,7 @@ import {
 const ImproveSection = () => {
   return (
     <>
-      <Container css={{ bg: "#f5f5f5", minWidth: "100%", p: 0 }}>
-        {/* <Spacer y={2} /> */}
+      <Container css={{ bg: "$gray100", minWidth: "100%", p: 0 }}>
         <Grid.Container css={{ m: "0px auto", pt: 40, width: "60vw" }}>
           <Spacer y={1} />
           <Grid.Container
@@ -35,7 +34,6 @@ const ImproveSection = () => {
           <Image src="/assets/ipad-t.png" alt="Default Image" />
         </Grid.Container>
       </Container>
-      {/* </Container> */}
       <Spacer y={2} />
     </>
   );
