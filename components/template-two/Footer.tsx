@@ -1,4 +1,4 @@
-import { Container, Image, Grid, Text, Spacer, Card } from "@nextui-org/react";
+import { Container, Image, Grid, Text } from "@nextui-org/react";
 
 export default function App() {
   return (
@@ -7,22 +7,11 @@ export default function App() {
         display="flex"
         wrap="nowrap"
         justify="space-around"
-        css={{ gap: 200, m: "0px auto", p: 0, width: "60vw" }}
+        css={{ gap: 200, m: "0 auto", p: 0, w: "60vw", py: "$16" }}
       >
         <Grid.Container>
-          <Text color="#aeaeae" size={10}>
+          <Text color="#aeaeae" size={15}>
             © 0000 Uisual
-          </Text>
-        </Grid.Container>
-        <Grid.Container justify="center" css={{ gap: "$10" }}>
-          <Text color="#aeaeae" size={10}>
-            Features
-          </Text>
-          <Text color="#aeaeae" size={10}>
-            Help
-          </Text>
-          <Text color="#aeaeae" size={10}>
-            Terms
           </Text>
         </Grid.Container>
         <Grid.Container justify="flex-end" css={{ gap: "$10" }}>
@@ -37,7 +26,6 @@ export default function App() {
           </Grid>
         </Grid.Container>
       </Container>
-      <Spacer y={2} />
     </>
   );
 }

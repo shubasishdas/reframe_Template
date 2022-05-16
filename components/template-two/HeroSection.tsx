@@ -6,44 +6,50 @@ import {
   Spacer,
   Image,
 } from "@nextui-org/react";
-import NavBar from "./NavBar";
+import UpperNavbar from "./UpperNavbar";
+import BottomNavbar from "./BottomNavbar";
 
 const HeroSection = () => {
   return (
     <>
-      <NavBar />
-      <Container css={{ m: "0 auto", p: 0, w: "60vw" }}>
-        <Spacer y={3} />
-        <Grid.Container justify="space-between">
-          <Grid>
-            <Image
-              src={"/assets/companyLogo.png"}
-              alt="companyLogo"
-              css={{ size: "$10" }}
-            />
-          </Grid>
-          <Button size="sm">Add to Chrome</Button>
-        </Grid.Container>
+      <UpperNavbar />
+      <Container css={{ m: "0 auto", p: 0, w: "70vw" }}>
+        <Spacer y={2} />
+        <BottomNavbar />
         <Spacer y={5} />
-        <Grid.Container
-          direction="column"
-          alignItems="center"
-          css={{ px: "$80" }}
-        >
-          <Text h1 b>
-            Design better
-          </Text>
-          <Text css={{ ta: "center", fontSize: "$md" }}>
-            Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor
-            incididunt ut labore et dolore magna aliqua ullamco laboris nisi.
-          </Text>
-          <Spacer y={1} />
-          <Button size="lg">Add to Chrome - It's Free</Button>
-          <Spacer y={0.5} />
-          <Text color="$gray600">Firefox and Safari soon.</Text>
-          <Spacer y={2} />
+        <Grid.Container wrap="nowrap" css={{ gap: "$18" }}>
+          <Grid.Container
+            css={{
+              p: "$16 0",
+              flexBasis: "50%",
+            }}
+          >
+            <Text h2 b>
+              Design better.
+            </Text>
+            <Text css={{ fontSize: "$md" }}>
+              Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor
+              incididunt ut labore et dolore magna aliqua ullamco laboris nisi.
+            </Text>
+            <Grid.Container
+              wrap="nowrap"
+              alignItems="center"
+              css={{ gap: "$4" }}
+            >
+              <Grid>
+                <Button size="lg">Get Started For Free</Button>
+              </Grid>
+              <Text color="$gray600">30 days free trial.</Text>
+            </Grid.Container>
+          </Grid.Container>
+          <Grid
+            css={{
+              flexBasis: "50%",
+            }}
+          >
+            <Image src="/assets/ipad.png" />
+          </Grid>
         </Grid.Container>
-        <Image src="/assets/ipad.png" alt="Default Image" />
       </Container>
     </>
   );
