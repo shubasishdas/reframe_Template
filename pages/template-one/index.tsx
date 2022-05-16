@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import { Container } from "@nextui-org/react";
-import HeroSection from "../../components/HeroSection";
-import ClientSection from "../../components/ClientSection";
-import FeatureSection from "../../components/FeatureSection";
-import Footer from "../../components/Footer";
-import ImproveSection from "../../components/ImproveSection";
-import WallOfLove from "../../components/WallOfLove";
+import HeroSection from "../../components/template-one/HeroSection";
+import ClientSection from "../../components/template-one/ClientSection";
+import FeatureSection from "../../components/template-one/FeatureSection";
+import Footer from "../../components/template-one/Footer";
+import ImproveSection from "../../components/template-one/ImproveSection";
+import WallOfLove from "../../components/template-one/WallOfLove";
 
 const TemplateOne: NextPage = () => {
   return (
