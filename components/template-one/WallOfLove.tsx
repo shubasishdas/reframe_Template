@@ -1,5 +1,5 @@
 import { Container, Text, Grid, Spacer, Col } from "@nextui-org/react";
-import { comments } from "@utils/comments";
+import { comments } from "@utils/template-one/comments";
 import Comments from "./Comments";
 
 const WallOfLove = () => {

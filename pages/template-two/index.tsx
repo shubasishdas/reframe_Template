@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 import { Container } from "@nextui-org/react";
-import HeroSection from "../../components/HeroSection";
-import ClientSection from "../../components/ClientSection";
-import FeatureSection from "../../components/FeatureSection";
-import Footer from "../../components/Footer";
-import ImproveSection from "../../components/ImproveSection";
-import WallOfLove from "../../components/WallOfLove";
+import HeroSection from "../../components/template-two/HeroSection";
+import ClientSection from "../../components/template-two/ClientSection";
+import FeatureSection from "../../components/template-two/FeatureSection";
+import Footer from "../../components/template-two/Footer";
+import Reviews from "../../components/template-two/Reviews";
 
 const TemplateOne: NextPage = () => {
   return (
@@ -13,8 +12,7 @@ const TemplateOne: NextPage = () => {
       <HeroSection />
       <ClientSection />
       <FeatureSection />
-      <WallOfLove />
-      <ImproveSection />
+      <Reviews />
       <Footer />
     </Container>
   );

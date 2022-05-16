@@ -1,5 +1,5 @@
 import { Container, Grid, Image, Text, Spacer } from "@nextui-org/react";
-import { features } from "@utils/features";
+import { features } from "@utils/template-one/features";
 
 const FeatureSection = () => {
   return (
