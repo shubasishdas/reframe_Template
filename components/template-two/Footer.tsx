@@ -7,7 +7,7 @@ export default function App() {
         display="flex"
         wrap="nowrap"
         justify="space-around"
-        css={{ gap: 200, m: "0 auto", p: 0, w: "60vw", py: "$16" }}
+        css={{ m: "0 auto", p: 0, w: "65vw", py: "$16" }}
       >
         <Grid.Container>
           <Text color="#aeaeae" size={15}>

@@ -41,7 +41,7 @@ function Pricing() {
 
       <Spacer y={1} />
 
-      <Grid.Container justify="space-around" css={{ gap: "0px" }}>
+      <Grid.Container justify="space-around">
         {prices.map((price) => {
           if (price.period === period) {
             return price.plans.map((plan, index) => {

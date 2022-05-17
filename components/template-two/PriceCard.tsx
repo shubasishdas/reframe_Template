@@ -21,8 +21,9 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
   return (
     <Container
       css={{
-        w: "325px",
+        w: "$80",
         br: "$md",
+        // borderWeights: "$light",
         border: "1px solid $accents2",
         p: "$14",
         mb: "$14",
@@ -36,14 +37,14 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
             <Row
               css={{
                 ai: "flex-end",
-                gap: "0px",
+                gap: "0",
               }}
             >
               <Col css={{ w: "auto" }}>
                 <Text h1>${plan.price}</Text>
               </Col>
               <Col css={{ mb: "$2", ml: "$1" }}>
-                <Text css={{ textAlign: "left" }}>/{period}</Text>
+                <Text css={{ ta: "left" }}>/{period}</Text>
               </Col>
             </Row>
           </Grid>

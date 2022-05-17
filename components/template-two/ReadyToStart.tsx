@@ -16,7 +16,8 @@ const ReadyToStart = () => {
         <Grid.Container
           justify="space-between"
           alignItems="center"
-          css={{ w: "65vw" }}
+          css={{ w: "70vw" }}
+          gap={3}
         >
           <Grid>
             <Text h2>Ready to start?</Text>

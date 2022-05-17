@@ -22,8 +22,8 @@ const ContentCard = ({ content }: Content) => {
     <Grid>
       <Card
         css={{
-          width: "350px",
-          padding: "$0",
+          w: "$80",
+          p: "$0",
           boxShadow: "none",
           border: "1px solid $accents2",
         }}
@@ -31,7 +31,7 @@ const ContentCard = ({ content }: Content) => {
         <Card.Body
           css={{ padding: "$0", boxShadow: "none", borderRadius: "$0" }}
         >
-          <Card.Image objectFit="contain" src={content.img} width="$100" />
+          <Card.Image objectFit="contain" src={content.img} />
         </Card.Body>
         <Card.Footer>
           <Grid.Container justify="center">
