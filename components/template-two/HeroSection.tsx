@@ -37,7 +37,9 @@ const HeroSection = () => {
               css={{ gap: "$4" }}
             >
               <Grid>
-                <Button size="lg">Get Started For Free</Button>
+                <Button size="lg" css={{ br: "$xl", bg: "$text" }}>
+                  Get Started For Free
+                </Button>
               </Grid>
               <Text color="$gray600">30 days free trial.</Text>
             </Grid.Container>

@@ -20,7 +20,9 @@ const UpperNavbar = () => {
           css={{ size: "$10" }}
         />
       </Grid>
-      <Button size="sm">Download</Button>
+      <Button size="sm" css={{ br: "$xl", bg: "$text" }}>
+        Download
+      </Button>
     </Grid.Container>
   );
 };

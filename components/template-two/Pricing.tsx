@@ -1,12 +1,16 @@
-import { Container, Text, Grid, Spacer, Button } from "@nextui-org/react";
+import { Container, Text, Grid, Spacer } from "@nextui-org/react";
 import PriceCard from "./PriceCard";
+import { prices } from "@utils/template-two/prices";
+import { useState } from "react";
+import PlanButton from "./PlanButton";
 
 function Pricing() {
+  const [period, setPeriod] = useState("monthly");
+
   return (
     <Container
       justify="space-between"
       css={{
-        mw: "$100",
         mt: "$18",
         w: "70vw",
       }}
@@ -23,13 +27,10 @@ function Pricing() {
           </Text>
         </Grid>
 
-        <Spacer y={2} />
+        <Spacer y={1} />
 
-        <Grid.Container justify="center">
-          <Button.Group color="success" ghost css={{ zIndex: "$1" }}>
-            <Button>Billed Monthly</Button>
-            <Button>Billed Yearly</Button>
-          </Button.Group>
+        <Grid.Container justify="center" alignItems="center">
+          <PlanButton period={period} setPeriod={setPeriod} />
         </Grid.Container>
         <Grid>
           <Text color="$gray600" css={{ ta: "center" }}>
@@ -38,12 +39,18 @@ function Pricing() {
         </Grid>
       </Grid.Container>
 
-      <Spacer y={3} />
+      <Spacer y={1} />
 
-      <Grid.Container justify="space-around">
-        <PriceCard />
-        <PriceCard />
-        <PriceCard />
+      <Grid.Container justify="space-around" css={{ gap: "0px" }}>
+        {prices.map((price) => {
+          if (price.period === period) {
+            return price.plans.map((plan, index) => {
+              return (
+                <PriceCard plan={plan} period={price.period} key={index} />
+              );
+            });
+          }
+        })}
       </Grid.Container>
     </Container>
   );

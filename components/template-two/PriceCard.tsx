@@ -9,7 +9,15 @@ import {
   Image,
 } from "@nextui-org/react";
 
-const PriceCard = () => {
+interface PriceCardType {
+  plan: {
+    title: string;
+    price: number;
+  };
+  period: string;
+}
+
+const PriceCard = ({ plan, period }: PriceCardType) => {
   return (
     <Container
       css={{
@@ -17,12 +25,12 @@ const PriceCard = () => {
         br: "$md",
         border: "1px solid $accents2",
         p: "$14",
-        mb: "80px",
+        mb: "$14",
       }}
     >
       <Grid.Container>
         <Grid>
-          <Text h4>Basic</Text>
+          <Text h4>{plan.title}</Text>
           <Spacer y={0.5} />
           <Grid>
             <Row
@@ -32,10 +40,10 @@ const PriceCard = () => {
               }}
             >
               <Col css={{ w: "auto" }}>
-                <Text h1>$5</Text>
+                <Text h1>${plan.price}</Text>
               </Col>
               <Col css={{ mb: "$2", ml: "$1" }}>
-                <Text css={{ textAlign: "left" }}>/month</Text>
+                <Text css={{ textAlign: "left" }}>/{period}</Text>
               </Col>
             </Row>
           </Grid>

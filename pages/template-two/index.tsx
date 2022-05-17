@@ -6,6 +6,8 @@ import Footer from "../../components/template-two/Footer";
 import Reviews from "../../components/template-two/Reviews";
 import Contents from "../../components/template-two/Contents";
 import Pricing from "../../components/template-two/Pricing";
+import FAQs from "components/template-two/FAQs";
+import ReadyToStart from "components/template-two/ReadyToStart";
 
 const TemplateOne: NextPage = () => {
   return (
@@ -15,6 +17,8 @@ const TemplateOne: NextPage = () => {
       <Contents />
       <Reviews />
       <Pricing />
+      <FAQs />
+      <ReadyToStart />
       <Footer />
     </Container>
   );
