@@ -1,6 +1,11 @@
 import { Text, Grid, Col, Row } from "@nextui-org/react";
 
-const PlanButton = ({ period, setPeriod }) => {
+interface PlanButtonType {
+  period: "monthly" | "yearly";
+  setPeriod: (value: string) => void;
+}
+
+const PlanButton = ({ period, setPeriod }: PlanButtonType) => {
   return (
     <Grid css={{ w: "auto", bg: "$gray300", br: "$xl", py: "$3", px: "$3" }}>
       <Row css={{ h: "auto", gap: "$3" }}>
