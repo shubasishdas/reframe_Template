@@ -94,6 +94,7 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
                 fontSize: "$sm",
                 py: "$10",
                 px: "$18",
+                zIndex: "$1",
               }}
             >
               Get Started
