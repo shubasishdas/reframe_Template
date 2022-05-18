@@ -1,4 +1,4 @@
-import { Container, Text, Grid, Spacer, Col } from "@nextui-org/react";
+import { Container, Grid, Col } from "@nextui-org/react";
 import { reviews } from "@utils/template-two/reviews";
 import Reviews from "./Review-Individual";
 

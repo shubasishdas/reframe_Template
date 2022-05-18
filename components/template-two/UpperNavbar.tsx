@@ -1,6 +1,6 @@
 import { Button, Grid, Image } from "@nextui-org/react";
 
-const NavBar = () => {
+const UpperNavbar = () => {
   return (
     <Grid.Container
       justify="space-between"
@@ -10,7 +10,7 @@ const NavBar = () => {
         py: "$9",
         position: "sticky",
         top: 0,
-        zIndex: "$1",
+        zIndex: "$2",
       }}
     >
       <Grid>
@@ -20,9 +20,11 @@ const NavBar = () => {
           css={{ size: "$10" }}
         />
       </Grid>
-      <Button size="sm">Download</Button>
+      <Button size="sm" css={{ br: "$xl", bg: "$text" }}>
+        Download
+      </Button>
     </Grid.Container>
   );
 };
 
-export default NavBar;
+export default UpperNavbar;

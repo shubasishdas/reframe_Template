@@ -10,7 +10,7 @@ export default function Reviews({ review }: Review) {
       <Grid.Container justify="center">
         <Avatar size="xl" src={review.img} zoomed />
       </Grid.Container>
-      <Text size="$sm" css={{ ta: "center", fontWeight: "$light" }}>
+      <Text size="$md" css={{ ta: "center" }}>
         {review.text}
       </Text>
       <Spacer y={0.5} />
