@@ -5,7 +5,7 @@ import { useState } from "react";
 import PlanButton from "./PlanButton";
 
 function Pricing() {
-  const [period, setPeriod] = useState("monthly");
+  const [period, setPeriod] = useState<"monthly" | "yearly">("monthly");
 
   return (
     <Container

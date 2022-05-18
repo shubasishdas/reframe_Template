@@ -2,7 +2,7 @@ import { Text, Grid, Col, Row } from "@nextui-org/react";
 
 interface PlanButtonType {
   period: "monthly" | "yearly";
-  setPeriod: (value: string) => void;
+  setPeriod: (value: "monthly" | "yearly") => void;
 }
 
 const PlanButton = ({ period, setPeriod }: PlanButtonType) => {
