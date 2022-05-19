@@ -21,9 +21,9 @@ const Home: NextPage = () => {
         gap={2}
         css={{ h: "100vh" }}
       >
-        {routings.map((route) => {
+        {routings.map((route, index) => {
           return (
-            <Link href={route.link}>
+            <Link href={route.link} key={index}>
               <Card
                 bordered
                 shadow={false}
