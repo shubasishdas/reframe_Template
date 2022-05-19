@@ -23,7 +23,6 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
       css={{
         w: "$80",
         br: "$md",
-        // borderWeights: "$light",
         border: "1px solid $accents2",
         p: "$14",
         mb: "$14",
@@ -56,6 +55,7 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
               <Grid css={{ mr: "$5" }}>
                 <Image
                   src="/assets/template-two/check.svg"
+                  alt="check"
                   width={20}
                   height={20}
                 />
@@ -66,6 +66,7 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
               <Grid css={{ mr: "$5" }}>
                 <Image
                   src="/assets/template-two/check.svg"
+                  alt="check"
                   width={20}
                   height={20}
                 />
@@ -76,6 +77,7 @@ const PriceCard = ({ plan, period }: PriceCardType) => {
               <Grid css={{ mr: "$5" }}>
                 <Image
                   src="/assets/template-two/cross.svg"
+                  alt="cross"
                   width={20}
                   height={20}
                 />

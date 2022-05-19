@@ -14,6 +14,7 @@ function Question({ faq }: Faq) {
         <Grid css={{ mr: "$5", mt: "$4" }}>
           <Image
             src="/assets/template-two/question.svg"
+            alt="question"
             width={20}
             height={20}
           />
